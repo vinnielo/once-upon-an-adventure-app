@@ -5,7 +5,7 @@ export default {
   // Get all users
   getUser: function (id) {
     // return axios.get("https://once-upon-an-adventure-api.onrender.com/api/signup", userData );
-    return fetch(`/api/user/${id}`, {
+    return fetch(`https://once-upon-an-adventure-api.onrender.com/api/user/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -17,7 +17,7 @@ export default {
   // Saves a User to the database
   saveUser: function (userData) {
     // return axios.post("https://once-upon-an-adventure-api.onrender.com/api/user", userData);
-    return fetch("/api/user", {
+    return fetch("https://once-upon-an-adventure-api.onrender.com/api/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
