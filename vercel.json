@@ -2,7 +2,11 @@
     "rewrites": [
       {
         "source": "/api/user",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/user/"
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/"
+      },
+      {
+        "source": "/api/user/login",
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/login"
       }
 
     ]
