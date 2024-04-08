@@ -10,7 +10,7 @@
       },
       {
         "source": "/api/user/:id",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/"
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user"
       }
 
     ]
