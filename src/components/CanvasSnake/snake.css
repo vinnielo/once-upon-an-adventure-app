@@ -1,0 +1,59 @@
+#lose-cover {
+    background-color: black;
+    color: white;
+    position: absolute;
+    z-index: 7;
+    height: 500px;
+    width: 700px;
+    top: 5%;
+    left: 14% !important;
+    text-align: center;
+}
+
+/* Snake css */
+#equation {
+    position: absolute;
+    top: 46%;
+    right: 20%;
+    color: black;
+    background-color:white;
+    width: 400px;
+    text-align: center;
+
+}
+
+#instructions {
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    width: 200px;
+}
+
+#instruction-list {
+    text-align: left;
+}
+
+/* hangman CSS */
+
+/* so the images we use to reference don't show */
+ #required-images {
+    display: none;
+}
+
+/* Type game CSS */
+.form-style {
+    position: absolute;
+    top: 49%;
+    right: 42%;
+}
+
+.word-style {
+    position: absolute;
+    z-index: 7;
+    color: white;
+    top: 33%;
+}
+

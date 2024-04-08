@@ -1,0 +1,11 @@
+.thronePosition {
+    margin: 5px;
+    top: 30%;
+    position: absolute;
+}
+
+.charPosition {
+    position: absolute;
+    top: 78%;
+    left: 47%
+}
