@@ -9,12 +9,12 @@
         "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/login"
       },
       {
-        "source": "/api/user/:id*",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/"
+        "source": "/api/user/:id",
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/:id"
       },
       {
-        "source": "/api/sprite/:id*",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/"
+        "source": "/api/sprite/:id",
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/:id"
       }
 
 
