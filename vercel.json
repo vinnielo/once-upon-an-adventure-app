@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/user",
+        "destination": "https://once-upon-an-adventure-api.onrender.com/user/"
+      }
+
+    ]
+  }

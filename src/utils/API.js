@@ -5,7 +5,7 @@ export default {
   // Get all users
   getUser: function (id) {
     // return axios.get("https://once-upon-an-adventure-api.onrender.com/api/signup", userData );
-    return fetch(`https://once-upon-an-adventure-api.onrender.com/api/user/${id}`, {
+    return fetch(`/api/user/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -17,7 +17,7 @@ export default {
   // Saves a User to the database
   saveUser: function (userData) {
     // return axios.post("https://once-upon-an-adventure-api.onrender.com/api/user", userData);
-    return fetch("https://once-upon-an-adventure-api.onrender.com/api/user", {
+    return fetch("/api/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,32 +43,32 @@ export default {
 
   getSprite: function (spriteData) {
     return axios.get(
-      "/api/sprite",
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite",
       spriteData
     );
   },
 
   getUserSprite: function (id) {
     return axios.get(
-      `/api/user/avatar/${id}`
+      `https://once-upon-an-adventure-api.onrender.com/api/user/avatar/${id}`
     );
   },
 
   getUserStory: function (id) {
     return axios.get(
-      `/api/user/avatar/story/${id}`
+      `https://once-upon-an-adventure-api.onrender.com/api/user/avatar/story/${id}`
     );
   },
 
   getUserInventory: function (id) {
     return axios.get(
-      `/api/user/inventory/${id}`
+      `https://once-upon-an-adventure-api.onrender.com/api/user/inventory/${id}`
     );
   },
 
   UpdateSpriteLives: function (spriteData, id) {
     return axios.put(
-      "/api/sprite/lives/" +
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite/lives/" +
         id +
         "/" +
         spriteData
@@ -77,7 +77,7 @@ export default {
 
   UpdateSpriteMoney: function (spriteData, id) {
     return axios.put(
-      "/api/sprite/money/" +
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite/money/" +
         id +
         "/" +
         spriteData
@@ -85,7 +85,7 @@ export default {
   },
   UpdateSpriteHomeFirst: function (spriteData, id) {
     return axios.put(
-      "/api/sprite/homefirst/" +
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite/homefirst/" +
         id,
       spriteData
     );
@@ -93,7 +93,7 @@ export default {
 
   UpdateSpriteFirstGuardTalk: function (spriteData, id) {
     return axios.put(
-      "/api/sprite/guardTalk/" +
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite/guardTalk/" +
         id,
       spriteData
     );
@@ -101,7 +101,7 @@ export default {
 
   UpdateSpriteFirstOrcTalk: function (spriteData, id) {
     return axios.put(
-      "/api/sprite/orcTalk/" +
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite/orcTalk/" +
         id,
       spriteData
     );
@@ -109,7 +109,7 @@ export default {
 
   UpdateSpriteFirstJaceTalk: function (spriteData, id) {
     return axios.put(
-      "/api/sprite/jaceTalk/" +
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite/jaceTalk/" +
         id,
       spriteData
     );
@@ -117,7 +117,7 @@ export default {
 
   UpdateSpriteFirstThiefTalk: function (spriteData, id) {
     return axios.put(
-      "/api/sprite/thiefTalk/" +
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite/thiefTalk/" +
         id,
       spriteData
     );
@@ -125,7 +125,7 @@ export default {
 
   UpdateSpritePlace: function (spriteData, id) {
     return axios.put(
-      "/api/sprite/place/" +
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite/place/" +
         id +
         "/" +
         spriteData
@@ -134,14 +134,14 @@ export default {
 
   UpdateSpritePermit: function (spriteData, id) {
     return axios.put(
-      "/api/sprite/permit/" + id,
+      "https://once-upon-an-adventure-api.onrender.com/api/sprite/permit/" + id,
       spriteData
     );
   },
 
   UpdateStory: function (storyData, id) {
     return axios.put(
-      "/api/story/update/" +
+      "https://once-upon-an-adventure-api.onrender.com/api/story/update/" +
         id +
         "/" +
         storyData
@@ -168,7 +168,7 @@ export default {
   },
   saveInventory: function (spriteData, id) {
     return axios.post(
-      "/api/inventory" + id,
+      "https://once-upon-an-adventure-api.onrender.com/api/inventory" + id,
       spriteData
     );
   },
