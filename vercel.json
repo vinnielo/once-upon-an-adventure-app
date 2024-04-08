@@ -10,8 +10,13 @@
       },
       {
         "source": "/api/user/:id*",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user"
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/"
+      },
+      {
+        "source": "/api/sprite/:id*",
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/"
       }
+
 
     ]
   }
