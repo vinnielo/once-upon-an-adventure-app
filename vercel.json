@@ -6,11 +6,11 @@
       },
       {
         "source": "/api/user/login",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/login"
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user"
       },
       {
-        "source": "/api/user/login/:id",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/:id"
+        "source": "/api/user/:id",
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/"
       }
 
     ]
