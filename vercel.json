@@ -9,8 +9,8 @@
         "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/login"
       },
       {
-        "source": "/api/user/:id(\\d+)",
-        "destination": "https://once-upon-an-adventure-api.onrender.com"
+        "source": "/api/user/:id*",
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user"
       }
 
     ]
