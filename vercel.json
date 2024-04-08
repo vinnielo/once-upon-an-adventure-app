@@ -1,12 +1,16 @@
 {
     "rewrites": [
       {
-        "source": "/api/user",
+        "source": "/api/user/",
         "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/"
       },
       {
         "source": "/api/user/login",
         "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/login"
+      },
+      {
+        "source": "/api/user/login/:id",
+        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/:id"
       }
 
     ]
