@@ -58,8 +58,8 @@
       "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/guardTalk/:id"
     },
     {
-      "source": "/api/sprite/homeFirst/:id",
-      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/homeFirst/:id"
+      "source": "/api/sprite/homefirst/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/homefirst/:id"
     },
     {
       "source": "/api/inventory/:id",
