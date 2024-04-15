@@ -28,8 +28,9 @@ function ThroneRoom(props) {
         const getUserData = async ()=> {
             const userData = await API.getUser(id)
             const user = await userData.json()
+            console.log(user);
          
-            setUserImage(user.sprite[0])
+            // setUserImage(user.sprite[0])
             
         }
   
