@@ -42,8 +42,8 @@
       "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/place/:id/:place"
     },
     {
-      "source": "/api/sprite/theifTalk/:id",
-      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/theifTalk/:id"
+      "source": "/api/sprite/thiefTalk/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/thiefTalk/:id"
     },
     {
       "source": "/api/sprite/jaceTalk/:id",
