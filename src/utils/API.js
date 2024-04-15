@@ -76,22 +76,22 @@ export default {
   },
 
   UpdateSpriteMoney: function (spriteData, id) {
-    // return axios.put(
-    //   "/api/sprite/money/" +
-    //     id +
-    //     "/" +
-    //     spriteData
-    // );
    return fetch(`/api/sprite/money/${id}/${spriteData}`, {
       method: 'PUT',
     })
   },
   UpdateSpriteHomeFirst: function (spriteData, id) {
-    return axios.put(
-      "/api/sprite/homefirst/" +
-        id,
-      spriteData
-    );
+    // return axios.put(
+    //   "/api/sprite/homefirst/" +
+    //     id,
+    //   spriteData
+    // );
+    return fetch(`/api/sprite/homefirst/${id}`,{
+      method: 'PUT',
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
   },
 
   UpdateSpriteFirstGuardTalk: function (spriteData, id) {

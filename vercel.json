@@ -21,6 +21,10 @@
       "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/permit/:id"
     },
     {
+      "source": "/api/story/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/story/:id"
+    },
+    {
       "source": "/api/story/update/:id",
       "destination": "https://once-upon-an-adventure-api.onrender.com/api/story/update/:id"
     },
