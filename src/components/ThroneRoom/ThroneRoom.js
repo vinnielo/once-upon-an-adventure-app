@@ -30,7 +30,7 @@ function ThroneRoom(props) {
             const user = await userData.json()
             console.log(user);
          
-            // setUserImage(user.sprite[0])
+            setUserImage(user.sprite[0].sprite)
             
         }
   
