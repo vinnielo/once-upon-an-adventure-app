@@ -17,24 +17,19 @@ function InnerCastle() {
     const [userMoney, setUserMoney] = useState(null)
 
     useEffect(() => {
-        API.getUserSprite(id).then(user => {
-            const { sprite } = user.data[0].sprite[0]
+      
 
-            
-       
-                return setUserAvatar(sprite)
-        }).then(() => {API.getUserSprite(id).then(user => {
-            const { name } = user.data[0].sprite[0]
-       
-            setUserAvatarName(name)
-        })
-            
-        }).then(()=>{
-            API.getUserSprite(id).then(user => {
-                const {money} = user.data[0].sprite[0]
-                return setUserMoney(money)
-            })
-        })
+        const getUserData = async () => {
+            const userData = await API.getUser(id);
+            const user = await userData.json();
+            const { sprite, name, money } = user.sprite[0];
+      
+            setUserAvatar(sprite);
+            setUserAvatarName(name);
+            setUserMoney(money)
+          };
+      
+          getUserData();
     }, []);
 
     return(
