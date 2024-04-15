@@ -47,7 +47,7 @@ class CastleTextBox extends React.Component {
             this.setState({ money: money })
             this.heart()
 
-            userName = user.data[0].sprite[0].name
+            userName = name
             this.setState({ storyString: userName + " enters a grand hall. At the end of it sits King Bryan. 'Hello citizen', says the king. 'Can you help me? I'm not a good king if I can't type, but no one can teach me!' " })
             
             // has the buttons on an interval so that the story can be read
