@@ -60,6 +60,10 @@
     {
       "source": "/api/inventory/:id",
       "destination": "https://once-upon-an-adventure-api.onrender.com/api/inventory/:id"
+    },
+    {
+      "source": "/api/user/inventory/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/inventory/:id"
     }
   ]
 }
