@@ -120,18 +120,19 @@ export default {
   },
 
   UpdateSpriteFirstThiefTalk: function (spriteData, id) {
-    // return axios.put(
-    //   "/api/sprite/thiefTalk/" +
-    //     id,
-    //   spriteData
-    // );
-    return fetch(`/api/sprite/thiefTalk/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(spriteData),
-    })
+    console.log(spriteData);
+    return axios.put(
+      "/api/sprite/thiefTalk/" +
+        id,
+      spriteData
+    );
+    // return fetch(`/api/sprite/thiefTalk/${id}`, {
+    //   method: "PUT",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(spriteData),
+    // })
   },
 
   UpdateSpritePlace: function (spriteData, id) {
