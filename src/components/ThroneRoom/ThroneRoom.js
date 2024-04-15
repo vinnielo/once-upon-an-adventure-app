@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ThroneRoom.css"
 import API from "../../utils/API";
 import { useParams } from "react-router-dom";
@@ -22,11 +22,20 @@ function ThroneRoom(props) {
 
 
 
-    API.getUserSprite(id).then(user => {
-        const { sprite } = user.data[0].sprite[0]
-        setUserImage(sprite)
-        
-    });
+
+    useEffect(() => {
+
+        const getUserData = async ()=> {
+            const userData = await API.getUser(id)
+            const user = await userData.json()
+         
+            setUserImage(user.sprite[0])
+            
+        }
+  
+
+        getUserData()
+    }, []);
 
     return(
         <div className="thronePosition">

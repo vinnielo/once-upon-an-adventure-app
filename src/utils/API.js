@@ -81,18 +81,18 @@ export default {
     })
   },
   UpdateSpriteHomeFirst: function (spriteData, id) {
-    // return axios.put(
-    //   "/api/sprite/homefirst/" +
-    //     id,
-    //   spriteData
-    // );
-    return fetch(`/api/sprite/homefirst/${id}`,{
-      method: 'PUT',
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(spriteData)
-    })
+    return axios.put(
+      "/api/sprite/homefirst/" +
+        id,
+      spriteData
+    );
+    // return fetch(`/api/sprite/homefirst/${id}`,{
+    //   method: 'PUT',
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(spriteData)
+    // })
   },
 
   UpdateSpriteFirstGuardTalk: function (spriteData, id) {
