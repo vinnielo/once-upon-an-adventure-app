@@ -38,8 +38,8 @@
       "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/money/:id/:money"
     },
     {
-      "source": "/api/sprite/place/:id",
-      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/place/:id"
+      "source": "/api/sprite/place/:id/:place",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/place/:id/:place"
     },
     {
       "source": "/api/sprite/theifTalk/:id",
