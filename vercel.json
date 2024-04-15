@@ -1,22 +1,65 @@
 {
-    "rewrites": [
-      {
-        "source": "/api/user/",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/"
-      },
-      {
-        "source": "/api/user/login",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/login"
-      },
-      {
-        "source": "/api/user/:id",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/:id"
-      },
-      {
-        "source": "/api/sprite/:id",
-        "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/:id"
-      }
+  "rewrites": [
+    {
+      "source": "/api/user/",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/"
+    },
+    {
+      "source": "/api/user/login",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/login"
+    },
+    {
+      "source": "/api/user/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/user/:id"
+    },
+    {
+      "source": "/api/sprite/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/:id"
+    },
+    {
+      "source": "/api/sprite/permit/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/permit/:id"
+    },
+    {
+      "source": "/api/story/update/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/story/update/:id"
+    },
+    {
+      "source": "/api/sprite/lives/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/lives/:id"
+    },
 
-
-    ]
-  }
+    {
+      "source": "/api/sprite/money/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/money/:id"
+    },
+    {
+      "source": "/api/sprite/place/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/place/:id"
+    },
+    {
+      "source": "/api/sprite/theifTalk/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/theifTalk/:id"
+    },
+    {
+      "source": "/api/sprite/jaceTalk/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/jaceTalk/:id"
+    },
+    {
+      "source": "/api/sprite/orcTalk/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/orcTalk/:id"
+    },
+    {
+      "source": "/api/sprite/guardTalk/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/guardTalk/:id"
+    },
+    {
+      "source": "/api/sprite/homeFirst/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/homeFirst/:id"
+    },
+    {
+      "source": "/api/inventory/:id",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/inventory/:id"
+    }
+  ]
+}
