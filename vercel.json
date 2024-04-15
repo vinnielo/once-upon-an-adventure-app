@@ -29,7 +29,7 @@
       "destination": "https://once-upon-an-adventure-api.onrender.com/api/story/update/:id"
     },
     {
-      "source": "/api/sprite/lives/:id",
+      "source": "/api/sprite/lives/:id/:lives",
       "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/lives/:id"
     },
 
