@@ -18,13 +18,24 @@ function CastleWorldGuardMoved(props) {
         }
     });
     const [userAvatar, setUserAvatar] = useState(null)
+    
     useEffect(() => {
         API.UpdateSpritePlace("castle", id).then(()=> {
         })
-        API.getUserSprite(id).then(user => {
-            const { sprite } = user.data[0].sprite[0]
-            return setUserAvatar(sprite)
-        })
+        // API.getUserSprite(id).then(user => {
+        //     const { sprite } = user.data[0].sprite[0]
+        //     return setUserAvatar(sprite)
+        // })
+        const getUserData = async () => {
+            const userData = await API.getUser(id);
+            const user = await userData.json();
+            const { sprite, name, apiFirstThiefTalk } = user.sprite[0];
+      
+            setUserAvatar(sprite);
+         
+          };
+      
+          getUserData();
     }, []);
 
 
