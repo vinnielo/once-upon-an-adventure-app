@@ -43,32 +43,32 @@ export default {
 
   getSprite: function (spriteData) {
     return axios.get(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite",
+      "/api/sprite",
       spriteData
     );
   },
 
   getUserSprite: function (id) {
     return axios.get(
-      `https://once-upon-an-adventure-api.onrender.com/api/user/avatar/${id}`
+      `/api/user/avatar/${id}`
     );
   },
 
   getUserStory: function (id) {
     return axios.get(
-      `https://once-upon-an-adventure-api.onrender.com/api/user/avatar/story/${id}`
+      `/api/user/avatar/story/${id}`
     );
   },
 
   getUserInventory: function (id) {
     return axios.get(
-      `https://once-upon-an-adventure-api.onrender.com/api/user/inventory/${id}`
+      `/api/user/inventory/${id}`
     );
   },
 
   UpdateSpriteLives: function (spriteData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite/lives/" +
+      "/api/sprite/lives/" +
         id +
         "/" +
         spriteData
@@ -77,7 +77,7 @@ export default {
 
   UpdateSpriteMoney: function (spriteData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite/money/" +
+      "/api/sprite/money/" +
         id +
         "/" +
         spriteData
@@ -85,7 +85,7 @@ export default {
   },
   UpdateSpriteHomeFirst: function (spriteData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite/homefirst/" +
+      "/api/sprite/homefirst/" +
         id,
       spriteData
     );
@@ -93,7 +93,7 @@ export default {
 
   UpdateSpriteFirstGuardTalk: function (spriteData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite/guardTalk/" +
+      "/api/sprite/guardTalk/" +
         id,
       spriteData
     );
@@ -101,7 +101,7 @@ export default {
 
   UpdateSpriteFirstOrcTalk: function (spriteData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite/orcTalk/" +
+      "/api/sprite/orcTalk/" +
         id,
       spriteData
     );
@@ -109,7 +109,7 @@ export default {
 
   UpdateSpriteFirstJaceTalk: function (spriteData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite/jaceTalk/" +
+      "/api/sprite/jaceTalk/" +
         id,
       spriteData
     );
@@ -117,7 +117,7 @@ export default {
 
   UpdateSpriteFirstThiefTalk: function (spriteData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite/thiefTalk/" +
+      "/api/sprite/thiefTalk/" +
         id,
       spriteData
     );
@@ -125,7 +125,7 @@ export default {
 
   UpdateSpritePlace: function (spriteData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite/place/" +
+      "/api/sprite/place/" +
         id +
         "/" +
         spriteData
@@ -134,14 +134,14 @@ export default {
 
   UpdateSpritePermit: function (spriteData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/sprite/permit/" + id,
+      "/api/sprite/permit/" + id,
       spriteData
     );
   },
 
   UpdateStory: function (storyData, id) {
     return axios.put(
-      "https://once-upon-an-adventure-api.onrender.com/api/story/update/" +
+      "/api/story/update/" +
         id +
         "/" +
         storyData
@@ -168,7 +168,7 @@ export default {
   },
   saveInventory: function (spriteData, id) {
     return axios.post(
-      "https://once-upon-an-adventure-api.onrender.com/api/inventory" + id,
+      "/api/inventory" + id,
       spriteData
     );
   },
