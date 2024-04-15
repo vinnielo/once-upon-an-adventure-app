@@ -30,8 +30,8 @@
     },
 
     {
-      "source": "/api/sprite/money/:id",
-      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/money/:id"
+      "source": "/api/sprite/money/:id/:money",
+      "destination": "https://once-upon-an-adventure-api.onrender.com/api/sprite/money/:id/:money"
     },
     {
       "source": "/api/sprite/place/:id",
