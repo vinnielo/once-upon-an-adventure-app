@@ -30,15 +30,13 @@ function getTileSprite(type) {
         //     return 'shop37'
 
         //event tiles
-      
+
         case 123:
             return 'orc'
         case 30: //sky map
             return 'returnToBookCliff'
         case 31: //castle map
             return 'returnToBookCastle'
-        case 43:
-            return 'wizard sky'
         case 247:
             return 'erikShop17'
 
@@ -109,55 +107,55 @@ function getTileSprite(type) {
             return 'house1'
 
 
-            // Forest
-            case 230:
-                return 'erikShop0'
-            case 231:
-                return 'erikShop1'
-            case 232:
-                return 'erikShop2'
-            case 233:
-                return 'erikShop3'
-            case 234:
-                return 'erikShop4'
-            case 235:
-                return 'erikShop5'
-            case 236:
-                return 'erikShop6'
-            case 237:
-                return 'erikShop7'
-            case 238:
-                return 'erikShop8'
-            case 239:
-                return 'erikShop9'
-            case 240:
-                return 'erikShop10'
-            case 241:
-                return 'erikShop11'
-            case 242:
-                return 'erikShop12'
-            case 243:
-                return 'erikShop13'
-            case 244:
-                return 'erikShop14'
-            case 245:
-                return 'erikShop15'
-            case 246:
-                return 'erikShop16'
-            case 248:
-                return 'erikShop18'
-            case 249:
-                return 'erikShop19'
-            case 250:
-                return 'thief'
-            case 251:
-                return 'fireSlice'
-            case 252:
-                return 'fireSlice1'
-            case 253:
-                return 'fireSlice2'
-            case 254:
-                return 'fireSlice3'
+        // Forest
+        case 230:
+            return 'erikShop0'
+        case 231:
+            return 'erikShop1'
+        case 232:
+            return 'erikShop2'
+        case 233:
+            return 'erikShop3'
+        case 234:
+            return 'erikShop4'
+        case 235:
+            return 'erikShop5'
+        case 236:
+            return 'erikShop6'
+        case 237:
+            return 'erikShop7'
+        case 238:
+            return 'erikShop8'
+        case 239:
+            return 'erikShop9'
+        case 240:
+            return 'erikShop10'
+        case 241:
+            return 'erikShop11'
+        case 242:
+            return 'erikShop12'
+        case 243:
+            return 'erikShop13'
+        case 244:
+            return 'erikShop14'
+        case 245:
+            return 'erikShop15'
+        case 246:
+            return 'erikShop16'
+        case 248:
+            return 'erikShop18'
+        case 249:
+            return 'erikShop19'
+        case 250:
+            return 'thief'
+        case 251:
+            return 'fireSlice'
+        case 252:
+            return 'fireSlice1'
+        case 253:
+            return 'fireSlice2'
+        case 254:
+            return 'fireSlice3'
 
         // Forest
         case 33:
@@ -357,7 +355,8 @@ function getTileSprite(type) {
             return 'background67 sky'
         case 140:
             return 'cliffEdge'
-
+        default:
+            return ''
     }
 }
 
@@ -380,7 +379,7 @@ function MapRow(props) {
             height: SPRITE_SIZE
         }}>
         {
-            props.tiles.map((tile, i) => <MapTile tile={tile} key={i}/>)
+            props.tiles.map((tile, i) => <MapTile tile={tile} key={i} />)
         }
     </div>
 }
